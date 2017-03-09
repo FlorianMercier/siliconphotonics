@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="style.css" />
+		<meta charset="utf-8" />
+		<title>Vtecl</title>
+	</head>
+<body>
+<div id="trame">
+	<header>
+		<div id="menu">
+	<nav id="nav">
+		<ul id="nav_ul">
+			<li id="nav_li"><a href="index.html">Introduction</a></li>
+			<li id="nav_li"><a href="contexte.html">Contexte</a></li>
+			<li id="nav_li"><a href="systemes.html">Systèmes Photoniques</a></li>
+			<li id="nav_li"><a href="recherches.html">Recherches Actuelles</a></li>
+			<li id="nav_li"><a href="suivre.html">Suivre</a></li>
+		</ul>
+	</nav>
+</div>
+	</header>
+	<div id="generale">
+		<img src="Images/intro.jpg" alt="Intro" style="width:800px;height:300px;">
+		
+		<h1>Contexte actuel</h1>
+		<p>Il est constaté que, depuis 2005, le comportement de l’évolution des microprocesseurs n’est plus le même. En effet depuis les année 70 la miniaturisation, la fréquence et la puissance des transistors évoluaient de manière exponentielle et aux alentours de 2005 ces deux dernières ont atteint un palier. On ne peut plus augmenter ni la puissance consommée par transistor, ni sa fréquence car la température alors dissipée devenait trop importante et causait la détérioration du système. Ces modifications sont visibles sur la figure 3 qui représente le graphe d’évolution des différents paramètres des transistors dans les microprocesseurs en fonction du temps.</p>
+		<center><img src="Images/figure3.png" alt="Figure 3" style="width:425px;"></center>
+
+		<p>D’autre part on constate que depuis 2014 Intel, le principal fabricant de microprocesseurs, n’a pas été en mesure de suivre son train de route habituel. Ce dernier consistait en deux phases appelés tick et tock : d’abord la réduction de finesse de gravure des transistors afin de créer un nouveau processeur, puis l’amélioration de l’architecture afin d’accroître ses performances. On peut donc voir que sur la figure 4 une troisième génération de transistor en 14nm a dû être sortie afin de palier au retard de la génération suivante, le 10nm dont les usines entament leur construction en 2017.</p>
+		<center><img src="Images/figure4.png" alt="Figure 4" style="width:650px;"></center>
+
+		<p>Enfin, cette course à la miniaturisation ne peut se poursuivre indéfiniment et va inexorablement se trouver stoppée par la taille finale de l’atome. Il est estimé que le plus petit transistor réalisable sera de 3nm soit un tiers de la taille de ceux construits actuellement.
+		Voici ci-dessous, figure 5, l’image obtenue au microscope électronique à balayage d’un transistor FinFET, on constate que l’architecture a du bien évoluer afin de répondre aux besoins toujours plus importants de miniaturisation et aux problèmes de courant de fuite et effets tunnel que cela commençait à engendrer.</p>
+		<center><img src="Images/figure5.png" alt="Figure 5" style="width:300px;"></center>
+
+		<p>Voici une petite illustration, figure 6, qui montre que malgré l’évolution technique et la miniaturisation les systèmes d’aujourd’hui sont toujours grandement limités par la chaleur qu’ils produisent. On constate alors qu’une grande partie de la puissance électrique est utilisée pour tenter de refroidir un système qui chauffe par effet joule en gaspillant lui aussi cette énergie.</p>
+		<center><img src="Images/figure6.png" alt="Figure 6" style="width:300px;"></center>
+
+		<p>Un deuxième point à aborder est le transport de cette information. Comparons donc l’énergie nécessaire pour changer l’état logique d’un transistor puis celle utilisée lors de son transport sur 1mm. Pour cela on utilisera les chiffres de l’ITRS pour un transistor de 22nm (2015).</p>
+		<ul>
+			<li>Coût énergétique du changement d’état d’un transistor :</li>
+			<center><img src="Images/calculs1.png" alt="Calcul 1" style="width:310px;"></center>
+			<li>Coût énergétique du déplacement de 1 bit sur le silicium :</li>
+			<center><img src="Images/calculs2.png" alt="Calcul 2" style="width:330px;"></center>
+		</ul>
+
+		<p>On constate alors qu’il faut un million de fois plus d’énergie pour transporter l’information sur 1mm que pour modifier cette information. Cela s’ajoute au faut qu’un microprocesseur, aussi petit soit-il, comporte environ 1 km de piste.</p>
+
+		<h2>Conclusion</h2>
+		<p>Il y a là une manière d’économiser de l’énergie et de diminuer la chaleur produite lors du fonctionnement du transistor en utilisant la lumière afin de transporter l’information plutôt qu’un courant.</p>
+		
+    <p></br></br></br></p>
+	</div>
+</div>
+</body>
+</html>
