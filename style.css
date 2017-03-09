@@ -3,11 +3,11 @@ html{
   font-family: "Century Gothic";
   margin-left: auto;
   margin-right: auto;
+  background-color:black;
 }
 body{
   margin:0;
   padding:0;
-  background-color:black;
   background: url(Images/circuits.png) no-repeat center fixed; 
   -webkit-background-size: cover; /* pour anciens Chrome et Safari */
   background-size: cover; /* version standardisée */
