@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="style.css" />
+		<meta charset="utf-8" />
+		<title>Vtecl</title>
+	</head>
+<body>
+<div id="trame">
+	<header>
+		<div id="menu">
+	<nav id="nav">
+		<ul id="nav_ul">
+			<li id="nav_li"><a href="index.html">Introduction</a></li>
+			<li id="nav_li"><a href="contexte.html">Contexte</a></li>
+			<li id="nav_li"><a href="systemes.html">Systèmes Photoniques</a></li>
+			<li id="nav_li"><a href="recherches.html">Recherches Actuelles</a></li>
+			<li id="nav_li"><a href="suivre.html">Suivre</a></li>
+		</ul>
+	</nav>
+</div>
+	</header>
+	<div id="generale">
+		<img src="Images/intro.jpg" alt="Intro" style="width:800px;height:300px;">
+
+		<h1>Systèmes Photoniques pour le transport de l’information</h1>
+		<p>Lorsque l’on pense à transport de l’information par la lumière, une technologie déjà bien présente nous vient à l’esprit : la fibre optique. En effet elle permet de transporter des données sur de très longues distances à des vitesses très grandes et en aillant relativement peu d’absorption donc nécessitant peu de puissance. Voici figure 7 la chaine du transport digital par fibre optique.</p>
+		<center><img src="Images/figure7.png" alt="Figure 7" style="width:600px;"></center>
+		 
+		<h2>Transport de l’information - Objectifs</h2>
+		<p>L’objectif est donc de réaliser des transports d’informations au sein du microprocesseur entres différentes parties éloignées. Par exemple on peut imaginer une communication optique entre les différents cœurs d’un processeur ou bien entre le processeur lui-même et sa mémoire cache. La première architecture est représentée schématiquement sur la figure 8 ci-dessous.</p>
+		<center><img src="Images/figure8.png" alt="Figure 8" style="width:400px;"></center>
+		 
+		<h2>Transport de l’information – Source de lumière</h2>
+		<p>La première petite révolution, qui a permis d’imaginer toutes sorte de systèmes photoniques directement embarqués sur le silicium, est le fait qu’il est désormais possible de réaliser un laser directement sur le substrat et en utilisant les procédés MOS très largement présent dans la microélectronique.</p>
+		<p>Une de ces diodes laser est nommée la diode VCSEL pour Vertical Cavity Surface Emitting Laser. Elle fonctionne en utilisant les principes d’émission spontanée et du puit quantique. C’est à dire qu’une cavité est piégée entre deux série de couche de semi-conducteur alternant entre GaAS et AlGaAs constituant deux miroirs de Bragg. Cette cavité émet des photons d’une énergie bien précise par confinement quantique, qui dépend de sa longueur. Les photons émis font des aller retours entres les deux miroirs en passant dans un milieu où la population électronique est inversée par une tension imposée aux bornes de la diode. Un photon rencontre alors un atome excité qui se désexcite en créant deux nouveaux photons identiques. Et ainsi de suite jusqu’à saturation. Une partie des photons s’échappe de la diode par l’un des miroirs et cela constitue le laser. Ce rayon a l’avantage d’être particulièrement monochromatique et directif puisque les photons sont tous des répliquent d’eux-mêmes. Ci-dessous en figure 9 est présenté un schéma structurel de la diode ainsi qu’une illustration du phénomène d’émission spontanée.</p>
+		<center><img src="Images/figure9.png" alt="Figure 9" style="width:400px;">
+		<img src="Images/figure9.1.png" alt="Figure 9.1" style="width:350px;"></center>
+
+		<h2>Transport de l’information – Guider la lumière</h2>
+		<p>Afin de guider la lumière des guides optiques de silicium sont utilisés. En effet le silicium est transparent pour une certaine longueur d’onde et la différence d’indice optique entre ce dernier et l’air ou la silice permet, comme pour une fibre, de confiner la lumière en son sein. L’onde électromagnétique va donc se propager le long du guide sans pouvoir s’en échapper. Ci-dessous un exemple d’illustration du confinement du champ dans le guide ainsi qu’une image de microscopie électronique à balayage d’un guide optique de silicium sur oxyde, figures 10.</p>
+		<center><img src="Images/figure10.png" alt="Figure 10" style="width:300px;">
+		<img src="Images/figure10.1.png" alt="Figure 10.1" style="width:400px;"></center>
+
+		<h2>Transport de l’information – Modulation</h2>
+		<p>Enfin afin de coder le signal logique composé de 0 et de 1 sous forme de lumière il est nécessaire de moduler l’intensité lumineuse de cette dernière. Pour cela une méthode consiste à utiliser un disque résonant d’un rayon dépendant de la longueur d’onde du signal à moduler. La fonction de transfert de ce disque est un filtre coupe bande, on fait en sorte que la bande de coupure soit proche de la longueur d’onde du signal, de sorte que le disque laisse passer cette lumière. Mais en appliquant un champ électrique sur ce disque, son indice optique va être modifié et il est alors possible de couper la lumière en faisant résonner le disque qui va alors créer des interférences destructives si le diamètre est calculé de sorte que le rayon ayant parcouru un nombre entier de tours se retrouve en opposition de phase. On a alors créé un 0 logique. La figure 11 montre une image réalisée par microscopie électronique à balayage d’un disque résonateur ainsi qu’une animation présentant son fonctionnement.</p>
+		<center><img src="Images/figure11.png" alt="Figure 11" style="width:300px;">
+		<img src="Images/ring.gif" alt="Figure 11.1" style="width:300px;"></center>
+		<p>En utilisant ce phénomène de couplage entre guides optiques se trouvant suffisamment proche pour que l’effet tunnel puisse avoir lieu on peut réaliser des switches d’onde. La lumière se divise entre les deux guides d’onde proche et selon la longueur de leur proximité, l’énergie peut se retrouver complètement dans l’un des deux guides. Ainsi il est possible de diviser le signal ou de le faire passer d’une guide à un autre sans nécessiter de contact. La figure 12 illustre ce procédé avec une petite animation.</p>
+		<center><img src="Images/split.gif" alt="Figure 12" style="width:400px;"></center>
+
+		<h2>Transport de l’information – Routage</h2>
+		<p>Avec ces deux technologies de changement de guide d’onde selon la longueur d’onde du signal on peut imaginer un système de routage faisant fonctionner un FPGA. Une longueur d’onde donnée circule dans les guides optique et arrivée à l’intersection qui lui correspond est commuté sur un autre guide. Cela permet de réaliser la table de routage suivante, présenté en figure 13.</p>
+		<center><img src="Images/figure13.png" alt="Figure 13" style="width:450px;"></center>
+		<center><img src="Images/figure13.1.png" alt="Figure 13.1" style="width:500px;"></center>
+
+		<h2>Transport de l’information – Système global lecture écriture</h2>
+		<p>Avec les systèmes étudiés il est possible de réaliser un transport lumineux complet d’une information d’origine électrique. Un laser émet une lumière continue qui sera modulée par les anneaux puis lue par une photodiode plus loin et retransmis sous forme de signal électriques. Les avantages de la lumière sur le courant est qu’il est possible de faire passer simultanément plusieurs signaux dans le même guide optique en utilisant différente longueurs d’onde. Les anneaux sont spécifiques à une seule longueur d’onde si elles sont suffisamment espacées et on peut donc sélectionner uniquement la longueur d’onde désirée. D’autre part les ondes peuvent se croiser sans que cela pose de problème, ce qui est impossible avec les circuits électroniques et donc de nouvelles architectures deviennent possible. Sur le schéma suivant figure 14 est représenté un système d’écriture, lecture d’un signal lumineux. Il est multiplexé et dispose de 3 longueurs d’ondes différentes circulant dans le même guide optique.</p>
+		<center><img src="Images/figure14.png" alt="Figure 14" style="width:650px;"></center>
+		<center><img src="Images/figure14.1.png" alt="Figure 14.1" style="width:650px;"></center>
+
+		<h2>Transport de l’information – Problèmes actuels</h2>
+		<p>Actuellement, les principales difficultés résultent dans le fait que les parties photoniques doivent être réalisables avec les procédés MOS utilisés dans l’industrie de la micro électroniques. En effet l’objectif est de fabriquer en grande quantité les processeurs incluant de la photonique.</p>
+		<p>La deuxième difficulté est liée à la chaleur dissipée par les sources laser. L’objectif de la photonique était de diminuer la chaleur crée par les courants circulant dans le circuit mais les lasers en produisent aussi. Cela cause la diminution de l’efficacité du laser qui diminue avec la température ainsi que le décalage de la longueur d’onde de coupure du disque. Ce dernier phénomène peut causer le disfonctionnement du modulateur qui ne coupe alors plus le signal ou le coupe en permanence. Une solution peut être de placer la source en dehors du processeur.</p>
+		<center><img src="Images/figure16.png" alt="Figure 16" style="width:364px;">
+		<img src="Images/figure16.1.png" alt="Figure 16.1" style="width:350px;"></center>
+
+		<p></br></br></br></p>
+	</div>
+</div>
+</body>
+</html>
